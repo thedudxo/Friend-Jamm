@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 89bc69a51a963e44ab52bddfa4e20f52
+guid: 4315772864fe528459d26d4545b3d434
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -17,6 +17,8 @@ ModelImporter:
     3300002: WindowFrame5
     4300000: WindowFrame5
     4300002: pPlane6
+    7400000: Take 001
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -92,7 +94,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

@@ -53,6 +53,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4133223873402818}
+  - component: {fileID: 95845634518544642}
   m_Layer: 0
   m_Name: Greybox_Window_Small
   m_TagString: Untagged
@@ -95,7 +96,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1288485106236666}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.4880953, y: 0.00000006133599, z: 0.00000007994778}
+  m_LocalPosition: {x: 0.48809534, y: 0, z: 1.5916157e-14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4133223873402818}
@@ -116,7 +117,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 89bc69a51a963e44ab52bddfa4e20f52, type: 3}
+  - {fileID: 2100000, guid: 4315772864fe528459d26d4545b3d434, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -151,7 +152,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100002, guid: 89bc69a51a963e44ab52bddfa4e20f52, type: 3}
+  - {fileID: 2100002, guid: 4315772864fe528459d26d4545b3d434, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -177,11 +178,29 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1288485106236666}
-  m_Mesh: {fileID: 4300000, guid: 89bc69a51a963e44ab52bddfa4e20f52, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 4315772864fe528459d26d4545b3d434, type: 3}
 --- !u!33 &33993419400614754
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1195720878324618}
-  m_Mesh: {fileID: 4300002, guid: 89bc69a51a963e44ab52bddfa4e20f52, type: 3}
+  m_Mesh: {fileID: 4300002, guid: 4315772864fe528459d26d4545b3d434, type: 3}
+--- !u!95 &95845634518544642
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1931804000875070}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 4315772864fe528459d26d4545b3d434, type: 3}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
