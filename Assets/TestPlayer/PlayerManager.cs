@@ -8,8 +8,8 @@ public class PlayerManager : MonoBehaviour {
     public KeyCode SwitchChar;
     public GameObject switchEffect;
     private Rigidbody rb;
-    private float accel = 12;
-    private float maxSpeed = 600;
+    private float accel = 500;
+    private float maxSpeed = 8;
 
     void Start() {
         rb = GetComponent<Rigidbody>();
@@ -19,12 +19,17 @@ public class PlayerManager : MonoBehaviour {
         float speed = rb.velocity.magnitude;
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
-
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        if (movement != Vector3.zero) {
-                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement.normalized), 0.15f);
+        Vector3 movement = new Vector3(moveHorizontal, 0, moveVertical);
+        if (rb.velocity.x < maxSpeed || rb.velocity.z < maxSpeed) {
+            float ignore = rb.velocity.y;
+            Vector3 notThis = movement * maxSpeed;
+            notThis.y = ignore;
+            rb.velocity = notThis;
         }
-        rb.velocity = Vector3.Lerp(rb.velocity, movement * maxSpeed * Time.deltaTime, accel);
+        rb.AddForce(moveHorizontal * accel * Time.deltaTime, 0, moveVertical * accel * Time.deltaTime);
+        if (movement != Vector3.zero) {
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement.normalized), 0.15f);
+        }
         Ray ray;
         RaycastHit hit;
         ray = new Ray(transform.position, transform.forward);
@@ -40,5 +45,6 @@ public class PlayerManager : MonoBehaviour {
             }
         }
         Debug.DrawRay(transform.position, transform.forward * 3);
+        Debug.Log(rb.velocity);
     }
 }
