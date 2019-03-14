@@ -8,6 +8,7 @@ ModelImporter:
     400000: pasted__pasted__pPlane1_pasted__pasted__pPlane1
     400002: //RootNode
     2100000: lambert1
+    2100002: pasted__pasted__pPlane1_pasted__pasted__pPlane1Mat
     2300000: pasted__pasted__pPlane1_pasted__pasted__pPlane1
     3300000: pasted__pasted__pPlane1_pasted__pasted__pPlane1
     4300000: pasted__pasted__pPlane1_pasted__pasted__pPlane1
@@ -50,7 +51,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
