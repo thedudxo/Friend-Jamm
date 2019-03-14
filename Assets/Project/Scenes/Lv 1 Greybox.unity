@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112000284, guid: 1f98742b82ee23e458a18fc542bfbc6d,
+  m_LightingDataAsset: {fileID: 112000266, guid: 1f98742b82ee23e458a18fc542bfbc6d,
     type: 2}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -2066,7 +2066,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 1166995548155848, guid: 817bc0eec3cf9694799df16335e84466, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
@@ -2074,45 +2074,49 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 1824643154742232, guid: 817bc0eec3cf9694799df16335e84466, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 1929293786796418, guid: 817bc0eec3cf9694799df16335e84466, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 1241248922363794, guid: 817bc0eec3cf9694799df16335e84466, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 1313337674697882, guid: 817bc0eec3cf9694799df16335e84466, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 1033333116303192, guid: 817bc0eec3cf9694799df16335e84466, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 1674857647290936, guid: 817bc0eec3cf9694799df16335e84466, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 1849762284133224, guid: 817bc0eec3cf9694799df16335e84466, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 1902447604658906, guid: 817bc0eec3cf9694799df16335e84466, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 1077009997592232, guid: 817bc0eec3cf9694799df16335e84466, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
-    - target: {fileID: 1684757103096710, guid: 817bc0eec3cf9694799df16335e84466, type: 2}
+    - target: {fileID: 0}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1372204302371068, guid: 817bc0eec3cf9694799df16335e84466, type: 2}
+      propertyPath: m_Name
+      value: Door
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 817bc0eec3cf9694799df16335e84466, type: 2}
@@ -13702,7 +13706,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4291398544414244, guid: 469f76a34a599934fa14201413085d48, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.3920001
+      value: -1.413
       objectReference: {fileID: 0}
     - target: {fileID: 4291398544414244, guid: 469f76a34a599934fa14201413085d48, type: 2}
       propertyPath: m_LocalPosition.y
@@ -13710,7 +13714,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4291398544414244, guid: 469f76a34a599934fa14201413085d48, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 4.365
+      value: 4.438
       objectReference: {fileID: 0}
     - target: {fileID: 4291398544414244, guid: 469f76a34a599934fa14201413085d48, type: 2}
       propertyPath: m_LocalRotation.x
