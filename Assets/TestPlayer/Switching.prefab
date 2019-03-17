@@ -67,7 +67,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4903147401331758}
-  - component: {fileID: 114060277075404964}
   - component: {fileID: 114836976509700946}
   m_Layer: 0
   m_Name: Switching
@@ -521,17 +520,6 @@ TrailRenderer:
     generateLightingData: 0
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
---- !u!114 &114060277075404964
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1628463117349294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b232b58a2a9caf640b5e5d7b790810cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114836976509700946
 MonoBehaviour:
   m_ObjectHideFlags: 1

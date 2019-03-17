@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311926, g: 0.38073996, b: 0.35872698, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10466,6 +10466,7 @@ GameObject:
   - component: {fileID: 1061077227}
   - component: {fileID: 1061077229}
   - component: {fileID: 1061077230}
+  - component: {fileID: 1061077231}
   m_Layer: 0
   m_Name: polySurface1
   m_TagString: Untagged
@@ -10560,6 +10561,24 @@ MonoBehaviour:
   hydrolicPress:
   - {fileID: 1407359748}
   - {fileID: 1569385025}
+--- !u!95 &1061077231
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1061077225}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 615e70556491af140b6ac9afd7206c03, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1074329083
 GameObject:
   m_ObjectHideFlags: 0
@@ -14464,7 +14483,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1406181095}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 5.07}
+  m_LocalPosition: {x: 0, y: 0, z: -17}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -17739,6 +17758,7 @@ GameObject:
   - component: {fileID: 1731115153}
   - component: {fileID: 1731115155}
   - component: {fileID: 1731115156}
+  - component: {fileID: 1731115157}
   m_Layer: 0
   m_Name: polySurface1
   m_TagString: Untagged
@@ -17833,6 +17853,24 @@ MonoBehaviour:
   hydrolicPress:
   - {fileID: 350823736}
   - {fileID: 1973915838}
+--- !u!95 &1731115157
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1731115151}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 615e70556491af140b6ac9afd7206c03, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1733166809
 GameObject:
   m_ObjectHideFlags: 0
@@ -22079,6 +22117,7 @@ GameObject:
   - component: {fileID: 2054498155}
   - component: {fileID: 2054498157}
   - component: {fileID: 2054498158}
+  - component: {fileID: 2054498159}
   m_Layer: 0
   m_Name: polySurface1
   m_TagString: Untagged
@@ -22173,6 +22212,24 @@ MonoBehaviour:
   hydrolicPress:
   - {fileID: 1223938644}
   - {fileID: 738735150}
+--- !u!95 &2054498159
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2054498153}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 615e70556491af140b6ac9afd7206c03, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2066497031
 GameObject:
   m_ObjectHideFlags: 0
@@ -22330,8 +22387,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2072711446}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0.00000016391276}
-  m_LocalPosition: {x: -2.126375, y: 1.6529417, z: 4.072455}
-  m_LocalScale: {x: 1.5134188, y: 1.5134182, z: 1.5134182}
+  m_LocalPosition: {x: -2.1265, y: 1.6529417, z: 4.0724}
+  m_LocalScale: {x: 527.1191, y: 527.1188, z: 527.1188}
   m_Children: []
   m_Father: {fileID: 1092433099}
   m_RootOrder: 0
