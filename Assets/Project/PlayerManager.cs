@@ -45,6 +45,5 @@ public class PlayerManager : MonoBehaviour {
             }
         }
         Debug.DrawRay(transform.position, transform.forward * 3);
-        Debug.Log(rb.velocity);
     }
 }
