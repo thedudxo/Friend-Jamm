@@ -8343,6 +8343,10 @@ Prefab:
       propertyPath: m_Name
       value: B3Press2
       objectReference: {fileID: 0}
+    - target: {fileID: 1503638447741126, guid: 5540b0579fd2b95458008526ab8c5582, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5540b0579fd2b95458008526ab8c5582, type: 2}
   m_IsPrefabParent: 0
@@ -8635,7 +8639,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1503638447741126, guid: 5540b0579fd2b95458008526ab8c5582, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1248255407055220, guid: 5540b0579fd2b95458008526ab8c5582, type: 2}
       propertyPath: m_Name
@@ -11327,7 +11331,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1503638447741126, guid: 5540b0579fd2b95458008526ab8c5582, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1332027995194644, guid: 5540b0579fd2b95458008526ab8c5582, type: 2}
       propertyPath: m_StaticEditorFlags
@@ -16478,7 +16482,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1503638447741126, guid: 5540b0579fd2b95458008526ab8c5582, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1677970921561992, guid: 5540b0579fd2b95458008526ab8c5582, type: 2}
       propertyPath: m_StaticEditorFlags
@@ -22146,7 +22150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1503638447741126, guid: 5540b0579fd2b95458008526ab8c5582, type: 2}
       propertyPath: m_StaticEditorFlags
-      value: 4294967295
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1503638447741126, guid: 5540b0579fd2b95458008526ab8c5582, type: 2}
       propertyPath: m_Name
@@ -23176,6 +23180,10 @@ Prefab:
     - target: {fileID: 1503638447741126, guid: 5540b0579fd2b95458008526ab8c5582, type: 2}
       propertyPath: m_Name
       value: B2Press1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1503638447741126, guid: 5540b0579fd2b95458008526ab8c5582, type: 2}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5540b0579fd2b95458008526ab8c5582, type: 2}
