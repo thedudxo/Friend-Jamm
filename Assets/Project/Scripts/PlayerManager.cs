@@ -7,6 +7,7 @@ public class PlayerManager : MonoBehaviour {
     public CameraScript camScript;
     public KeyCode SwitchChar;
     public GameObject switchEffect;
+    public Transform switchRay;
     private Rigidbody rb;
     private float accel = 200;
     private float maxSpeed = 5;
@@ -32,7 +33,7 @@ public class PlayerManager : MonoBehaviour {
         }
         Ray ray;
         RaycastHit hit;
-        ray = new Ray(transform.position, transform.forward);
+        ray = new Ray(switchRay.position, transform.forward);
         if (Physics.Raycast(ray, out hit, 3.0f) && hit.collider.tag == "Character") {
             if (Input.GetKeyDown(SwitchChar)) {
                 hit.collider.gameObject.GetComponent<PlayerManager>().enabled = true;
@@ -44,6 +45,6 @@ public class PlayerManager : MonoBehaviour {
                 this.GetComponent<PlayerManager>().enabled = false;
             }
         }
-        Debug.DrawRay(transform.position, transform.forward * 3);
+        Debug.DrawRay(switchRay.position, transform.forward * 3);
     }
 }
