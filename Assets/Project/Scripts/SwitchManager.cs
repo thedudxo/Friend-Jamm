@@ -7,6 +7,7 @@ public class SwitchManager : MonoBehaviour {
     public Transform newTarget;
     public Transform currentTarget;
     public Vector3 offset;
+    public bool noSwitch = false;
     private static SwitchManager instance;
 
     public static SwitchManager Instance
@@ -32,6 +33,7 @@ public class SwitchManager : MonoBehaviour {
             elapsed += Time.deltaTime;
             yield return null;
         }
+        noSwitch = false;
         currentTarget = newTarget;
         this.gameObject.SetActive(false);
     }
