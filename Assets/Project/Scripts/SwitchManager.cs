@@ -6,6 +6,7 @@ public class SwitchManager : MonoBehaviour {
 
     public Transform newTarget;
     public Transform currentTarget;
+    public Vector3 offset;
     private static SwitchManager instance;
 
     public static SwitchManager Instance
@@ -21,8 +22,8 @@ public class SwitchManager : MonoBehaviour {
     }
 
     public IEnumerator Switch() {
-        Vector3 from = currentTarget.position;
-        Vector3 to = newTarget.position;
+        Vector3 from = currentTarget.position + offset;
+        Vector3 to = newTarget.position + offset;
         float elapsed = 0.0f;
         float duration = 0.6f;
         while (elapsed < duration) {
