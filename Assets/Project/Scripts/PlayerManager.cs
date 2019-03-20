@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour {
 
     public CameraScript camScript;
+    public GameObject otherPlayer;
     public KeyCode SwitchChar;
     public GameObject switchEffect;
     public Transform switchRay;
@@ -31,19 +32,15 @@ public class PlayerManager : MonoBehaviour {
         if (movement != Vector3.zero) {
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement.normalized), 0.15f);
         }
-        Ray ray;
-        RaycastHit hit;
-        ray = new Ray(switchRay.position, transform.forward);
-        if (Physics.Raycast(ray, out hit, 3.0f) && hit.collider.tag == "Character") {
-            if (Input.GetKeyDown(SwitchChar)) {
-                hit.collider.gameObject.GetComponent<PlayerManager>().enabled = true;
-                switchEffect.transform.position = this.transform.position;
-                switchEffect.SetActive(true);
-                SwitchManager.Instance.newTarget = hit.transform;
-                StartCoroutine(SwitchManager.Instance.Switch());
-                camScript.target = hit.transform;
-                this.GetComponent<PlayerManager>().enabled = false;
-            }
+        if (Input.GetKeyDown(SwitchChar) && !SwitchManager.Instance.noSwitch) {
+            otherPlayer.GetComponent<PlayerManager>().enabled = true;
+            switchEffect.transform.position = this.transform.position;
+            switchEffect.SetActive(true);
+            SwitchManager.Instance.newTarget = otherPlayer.transform;
+            SwitchManager.Instance.noSwitch = true;
+            StartCoroutine(SwitchManager.Instance.Switch());
+            camScript.target = otherPlayer.transform;
+            this.GetComponent<PlayerManager>().enabled = false;
         }
         Debug.DrawRay(switchRay.position, transform.forward * 3);
     }
