@@ -102,12 +102,13 @@ GameObject:
   - component: {fileID: 4430418001089690}
   - component: {fileID: 33893912658982480}
   - component: {fileID: 23991377422752272}
+  - component: {fileID: 95836749569606350}
   m_Layer: 0
-  m_Name: B1Press1
+  m_Name: B2Press1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 4294967295
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!1 &1575385396553564
 GameObject:
@@ -235,8 +236,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1248255407055220}
-  m_LocalRotation: {x: -0, y: 0.000000014901161, z: -0, w: 1}
-  m_LocalPosition: {x: -6.41, y: 1.3, z: 3}
+  m_LocalRotation: {x: -0, y: 0.70710707, z: -0, w: 0.70710653}
+  m_LocalPosition: {x: 3.23, y: 1.3, z: 0.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4810819708329720}
@@ -541,7 +542,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 4fda570ba3d71e944b08c34a303daad5, type: 2}
+  - {fileID: 2100000, guid: a7c5edc709ec71646b0420d37496cf50, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -652,3 +653,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1596330691847660}
   m_Mesh: {fileID: 4300000, guid: 874539be4017ed642be8f73940363828, type: 3}
+--- !u!95 &95836749569606350
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1503638447741126}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b24d48dcec5cb4645ac15ddb17e687a1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
