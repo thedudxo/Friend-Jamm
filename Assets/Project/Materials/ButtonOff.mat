@@ -6,10 +6,10 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: HydrolicPress
+  m_Name: ButtonOff
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION _METALLICGLOSSMAP _NORMALMAP
-  m_LightmapFlags: 1
+  m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP
+  m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -19,7 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: 247b9df289e5dc449a7b9479bba55406, type: 3}
+        m_Texture: {fileID: 2800000, guid: 283ba86198ae4364780d2d61748667a6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -35,15 +35,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
-        m_Texture: {fileID: 2800000, guid: baadff78efd1e35428952b84170fb7ab, type: 3}
+        m_Texture: {fileID: 2800000, guid: 69e341900faecb343ab1cc9196fc6a76, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: daeb43967eeeb4e449b9fcbe57246ab3, type: 3}
+        m_Texture: {fileID: 2800000, guid: ac2293f651fefe245b7bd8f70125914c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 10852a8e3fe0c89438c96eddbe9919b5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2548634f239523f4fba2ec73100e8c2c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -73,4 +73,4 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 7.999999, g: 7.999999, b: 7.999999, a: 1}
+    - _EmissionColor: {r: 9.189588, g: 9.189588, b: 9.189588, a: 1}

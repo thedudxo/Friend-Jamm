@@ -105,8 +105,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4600348088477370}
   - component: {fileID: 54469604467829652}
-  - component: {fileID: 65561234631832690}
   - component: {fileID: 114162199815653016}
+  - component: {fileID: 136137713496687624}
   m_Layer: 0
   m_Name: Robot1
   m_TagString: Character
@@ -1284,6 +1284,19 @@ MonoBehaviour:
   SwitchChar: 101
   switchEffect: {fileID: 0}
   switchRay: {fileID: 4982601084563434}
+--- !u!136 &136137713496687624
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1370693250621708}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.28
+  m_Height: 0.86
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.39, z: 0}
 --- !u!136 &136335020753373070
 CapsuleCollider:
   m_ObjectHideFlags: 1

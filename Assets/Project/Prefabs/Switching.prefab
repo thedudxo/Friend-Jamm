@@ -36,6 +36,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4272984193070502}
   - component: {fileID: 212710640045579884}
+  - component: {fileID: 114078970838066550}
+  - component: {fileID: 114706596861872904}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -52,6 +54,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4413588011518296}
   - component: {fileID: 212534886489302568}
+  - component: {fileID: 114408108862038816}
+  - component: {fileID: 114272881898319540}
   m_Layer: 0
   m_Name: Sprite2
   m_TagString: Untagged
@@ -116,6 +120,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4594591659154724}
   - component: {fileID: 212078497563095502}
+  - component: {fileID: 114084055701808284}
+  - component: {fileID: 114900614182776502}
   m_Layer: 0
   m_Name: Sprite3
   m_TagString: Untagged
@@ -131,7 +137,7 @@ Transform:
   m_GameObject: {fileID: 1149223149868690}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -2.5, y: -1.19, z: 0}
-  m_LocalScale: {x: 0.42227304, y: 0.42227304, z: 0.42227304}
+  m_LocalScale: {x: 0.253398, y: 0.253398, z: 0.253398}
   m_Children:
   - {fileID: 4551113949963660}
   m_Father: {fileID: 4903147401331758}
@@ -145,7 +151,7 @@ Transform:
   m_GameObject: {fileID: 1330601801235324}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.54, y: -1.1900014, z: 0}
-  m_LocalScale: {x: 0.42227304, y: 0.42227304, z: 0.42227304}
+  m_LocalScale: {x: 0.253398, y: 0.253398, z: 0.253398}
   m_Children:
   - {fileID: 4520945264769576}
   m_Father: {fileID: 4903147401331758}
@@ -185,7 +191,7 @@ Transform:
   m_GameObject: {fileID: 1787843261398236}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0, y: 2.84, z: 0}
-  m_LocalScale: {x: 0.42227304, y: 0.42227304, z: 0.42227304}
+  m_LocalScale: {x: 0.253398, y: 0.253398, z: 0.253398}
   m_Children:
   - {fileID: 4965355337825728}
   m_Father: {fileID: 4903147401331758}
@@ -520,6 +526,74 @@ TrailRenderer:
     generateLightingData: 1
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
+--- !u!114 &114078970838066550
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1149223149868690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f6d3c6e4250e84192f5b34ce9e71bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowColor: {r: 0, g: 1, b: 0.91027117, a: 1}
+  glowBrightness: 5.2
+  outlineWidth: 10
+  alphaThreshold: 1
+  drawOutside: 0
+  enableInstancing: 0
+--- !u!114 &114084055701808284
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1787843261398236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f6d3c6e4250e84192f5b34ce9e71bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowColor: {r: 0, g: 1, b: 0.91027117, a: 1}
+  glowBrightness: 5.2
+  outlineWidth: 10
+  alphaThreshold: 1
+  drawOutside: 0
+  enableInstancing: 0
+--- !u!114 &114272881898319540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1330601801235324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f6d3c6e4250e84192f5b34ce9e71bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowColor: {r: 0, g: 1, b: 0.91027117, a: 1}
+  glowBrightness: 5.2
+  outlineWidth: 10
+  alphaThreshold: 1
+  drawOutside: 0
+  enableInstancing: 0
+--- !u!114 &114408108862038816
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1330601801235324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f6d3c6e4250e84192f5b34ce9e71bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowColor: {r: 0, g: 1, b: 0.91027117, a: 1}
+  glowBrightness: 5.2
+  outlineWidth: 10
+  alphaThreshold: 1
+  drawOutside: 0
+  enableInstancing: 0
 --- !u!114 &114426446019457008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -534,6 +608,41 @@ MonoBehaviour:
   newTarget: {fileID: 0}
   currentTarget: {fileID: 0}
   offset: {x: 0, y: 0.5, z: 0}
+  noSwitch: 0
+--- !u!114 &114706596861872904
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1149223149868690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f6d3c6e4250e84192f5b34ce9e71bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowColor: {r: 0, g: 1, b: 0.91027117, a: 1}
+  glowBrightness: 5.2
+  outlineWidth: 10
+  alphaThreshold: 1
+  drawOutside: 0
+  enableInstancing: 0
+--- !u!114 &114900614182776502
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1787843261398236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8f6d3c6e4250e84192f5b34ce9e71bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  glowColor: {r: 0, g: 1, b: 0.91027117, a: 1}
+  glowBrightness: 5.2
+  outlineWidth: 10
+  alphaThreshold: 1
+  drawOutside: 0
+  enableInstancing: 0
 --- !u!212 &212078497563095502
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -549,7 +658,7 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -594,7 +703,7 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -639,7 +748,7 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
