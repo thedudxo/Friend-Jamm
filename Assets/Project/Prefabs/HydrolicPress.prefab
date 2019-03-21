@@ -102,7 +102,8 @@ GameObject:
   - component: {fileID: 4430418001089690}
   - component: {fileID: 33893912658982480}
   - component: {fileID: 23991377422752272}
-  - component: {fileID: 95836749569606350}
+  - component: {fileID: 95132321179434342}
+  - component: {fileID: 136436635015244670}
   m_Layer: 0
   m_Name: B2Press1
   m_TagString: Untagged
@@ -171,6 +172,8 @@ GameObject:
   - component: {fileID: 4237010450675578}
   - component: {fileID: 33896460082995006}
   - component: {fileID: 23840395079992848}
+  - component: {fileID: 65748757715922120}
+  - component: {fileID: 65112594330202650}
   m_Layer: 0
   m_Name: Hydrolic_Press_Body
   m_TagString: Untagged
@@ -653,7 +656,31 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1596330691847660}
   m_Mesh: {fileID: 4300000, guid: 874539be4017ed642be8f73940363828, type: 3}
---- !u!95 &95836749569606350
+--- !u!65 &65112594330202650
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1677970921561992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5701328, y: 2.9718676, z: 0.1511727}
+  m_Center: {x: 0.011836464, y: -0.17163277, z: 0.77}
+--- !u!65 &65748757715922120
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1677970921561992}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5701328, y: 2.9718676, z: 0.1511727}
+  m_Center: {x: 0.011836464, y: -0.17163277, z: -0.50691164}
+--- !u!95 &95132321179434342
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -671,3 +698,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &136436635015244670
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1503638447741126}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.0000004
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0.0000029206276, y: 0, z: 0.000001847744}
