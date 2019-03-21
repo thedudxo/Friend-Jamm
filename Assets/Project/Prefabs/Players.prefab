@@ -107,6 +107,7 @@ GameObject:
   - component: {fileID: 54469604467829652}
   - component: {fileID: 114162199815653016}
   - component: {fileID: 136137713496687624}
+  - component: {fileID: 65561234631832690}
   m_Layer: 0
   m_Name: Robot1
   m_TagString: Character
@@ -1244,7 +1245,7 @@ Rigidbody:
   m_CollisionDetection: 0
 --- !u!65 &65561234631832690
 BoxCollider:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1370693250621708}
@@ -1266,6 +1267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camScript: {fileID: 0}
+  otherPlayer: {fileID: 0}
   SwitchChar: 101
   switchEffect: {fileID: 0}
   switchRay: {fileID: 4719337296769578}
@@ -1281,6 +1283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camScript: {fileID: 0}
+  otherPlayer: {fileID: 0}
   SwitchChar: 101
   switchEffect: {fileID: 0}
   switchRay: {fileID: 4982601084563434}
