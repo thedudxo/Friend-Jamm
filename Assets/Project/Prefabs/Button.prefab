@@ -24,7 +24,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1339363835494872
 GameObject:
@@ -37,8 +37,8 @@ GameObject:
   - component: {fileID: 33013726872004696}
   - component: {fileID: 23819834812775994}
   - component: {fileID: 64477057476898718}
-  - component: {fileID: 95615228264162108}
   - component: {fileID: 114327845184534044}
+  - component: {fileID: 95924994816163672}
   m_Layer: 0
   m_Name: pressdown
   m_TagString: Untagged
@@ -56,7 +56,7 @@ GameObject:
   - component: {fileID: 4367729243542002}
   - component: {fileID: 33031650287347808}
   - component: {fileID: 23996297592253886}
-  - component: {fileID: 64692909026133470}
+  - component: {fileID: 64496181179868754}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -70,15 +70,15 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1084250634641688}
-  m_LocalRotation: {x: -0, y: 0.70710677, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -1.4350376, y: 1.8160865, z: 4.398692}
+  m_LocalRotation: {x: -0, y: 0.52505255, z: -0, w: 0.85106987}
+  m_LocalPosition: {x: 0.34799957, y: 1.816, z: 4.3450003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4367729243542002}
   - {fileID: 4970843435609704}
+  - {fileID: 4367729243542002}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 90.00001, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 63.344, z: 0}
 --- !u!4 &4367729243542002
 Transform:
   m_ObjectHideFlags: 1
@@ -90,7 +90,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4291398544414244}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4970843435609704
 Transform:
@@ -103,7 +103,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4291398544414244}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &23819834812775994
 MeshRenderer:
@@ -203,7 +203,7 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: 9f673387b79ec9c43b891cf8a9e8d50f, type: 3}
---- !u!64 &64692909026133470
+--- !u!64 &64496181179868754
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -217,7 +217,7 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300004, guid: 9f673387b79ec9c43b891cf8a9e8d50f, type: 3}
---- !u!95 &95615228264162108
+--- !u!95 &95924994816163672
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
@@ -250,4 +250,8 @@ MonoBehaviour:
   hydrolicPress:
   - {fileID: 0}
   - {fileID: 0}
-  work: {fileID: 0}
+  button: {fileID: 1084250634641688}
+  pressOn: {fileID: 2100000, guid: 4fda570ba3d71e944b08c34a303daad5, type: 2}
+  pressOff: {fileID: 2100000, guid: a7c5edc709ec71646b0420d37496cf50, type: 2}
+  buttonOn: {fileID: 2100000, guid: 9f5184e6bff32c24fada04c0c18f5b39, type: 2}
+  buttonOff: {fileID: 2100000, guid: 00a1eb1122e41304ab9bcc0e27f0a07f, type: 2}

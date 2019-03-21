@@ -5,7 +5,12 @@ using UnityEngine;
 public class ButtonScript : MonoBehaviour {
 
     public bool isPressed = false;
-    public List<Animator> hydrolicPress;
+    public List<GameObject> hydrolicPress;
+    public GameObject button;
+    public Material pressOn;
+    public Material pressOff;
+    public Material buttonOn;
+    public Material buttonOff;
     private Animator buttonAnim;
 
     private void Start() {
@@ -14,17 +19,31 @@ public class ButtonScript : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision) {
         buttonAnim.SetBool("isPressed", true);
-        foreach (Animator press in hydrolicPress) {
-            press.SetBool("isPressed", true);
-            Debug.Log(press.GetBool("isPressed"));
+        Renderer[] mats = button.GetComponentsInChildren<Renderer>();
+        foreach (Renderer buttonMats in mats) {
+            buttonMats.material = buttonOn;
+        }
+        foreach (GameObject press in hydrolicPress) {
+            press.GetComponentInChildren<Animator>().SetBool("isPressed", true);
+            Renderer[] foo = press.GetComponentsInChildren<Renderer>();
+            foreach (Renderer renderer in foo) {
+                renderer.material = pressOn;
+            }
         }
     }
 
     private void OnCollisionExit(Collision collision) {
         buttonAnim.SetBool("isPressed", false);
-        foreach (Animator press in hydrolicPress) {
-            press.SetBool("isPressed", false);
-            Debug.Log(press.GetBool("isPressed"));
+        Renderer[] mats = button.GetComponentsInChildren<Renderer>();
+        foreach (Renderer buttonMats in mats) {
+            buttonMats.material = buttonOff;
+        }
+        foreach (GameObject press in hydrolicPress) {
+            press.GetComponentInChildren<Animator>().SetBool("isPressed", false);
+            Renderer[] foo = press.GetComponentsInChildren<Renderer>();
+            foreach(Renderer renderer in foo) {
+                renderer.material = pressOff;
+            }
         }
     }
 }
