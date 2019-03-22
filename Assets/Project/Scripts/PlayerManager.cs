@@ -11,7 +11,7 @@ public class PlayerManager : MonoBehaviour {
     public Transform switchRay;
     private Rigidbody rb;
     private float accel = 200;
-    private float maxSpeed = 5;
+    private float maxSpeed = 3;
 
     void Start() {
         rb = GetComponent<Rigidbody>();
