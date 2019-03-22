@@ -22,13 +22,17 @@ public class SwitchManager : MonoBehaviour {
         }
     }
 
+    private void Awake() {
+        StartCoroutine(Starter());
+    }
+
     public IEnumerator Switch() {
         Vector3 from = currentTarget.position + offset;
         Vector3 to = newTarget.position + offset;
         float elapsed = 0.0f;
         float duration = 0.6f;
         while (elapsed < duration) {
-            transform.Rotate(Vector3.forward * Time.deltaTime * 500);
+            transform.Rotate(Vector3.forward * Time.deltaTime * 1000);
             transform.position = Vector3.Lerp(from, to, elapsed/duration);
             elapsed += Time.deltaTime;
             yield return null;
@@ -38,4 +42,10 @@ public class SwitchManager : MonoBehaviour {
         this.gameObject.SetActive(false);
     }
 
+    public IEnumerator Starter() {
+        yield return new WaitForSeconds(0.1f);
+        transform.position = currentTarget.position;
+        this.gameObject.SetActive(false);
+        yield return null;
+    }
 }
