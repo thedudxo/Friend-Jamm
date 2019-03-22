@@ -12,7 +12,7 @@ public class PlayerManager : MonoBehaviour {
     public Vector3 spawn;
     private Rigidbody rb;
     private float accel = 200;
-    private float maxSpeed = 5;
+    private float maxSpeed = 3;
     public bool dead = false;
     private static PlayerManager instance;
     public static PlayerManager Instance {
