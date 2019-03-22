@@ -18,6 +18,6 @@ public class BucketSimulator : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        //stupidReference.SetActive
+        stupidReference.SetActive(true);
     }
 }

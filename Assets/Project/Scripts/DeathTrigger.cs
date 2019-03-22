@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class DeathTrigger : MonoBehaviour {
     
-	void Start () {
-		
-	}
 
     private void OnTriggerEnter(Collider other) {
-        StartCoroutine(PlayerManager.Instance.Death());
+       // StartCoroutine(other.GetComponent<DeathScript>().Death());
+        //StartCoroutine(DeathScript.Instance.Death());
     }
 }
