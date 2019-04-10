@@ -9,11 +9,9 @@ public class PlayerManager : MonoBehaviour {
     public KeyCode SwitchChar;
     public GameObject switchEffect;
     public Transform switchRay;
-    public Vector3 spawn;
     private Rigidbody rb;
     private float accel = 200;
-    private float maxSpeed = 5;
-    public bool dead = false;
+    private float maxSpeed = 3;
     private static PlayerManager instance;
     public static PlayerManager Instance {
         get {
@@ -29,7 +27,7 @@ public class PlayerManager : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        if (dead || SwitchManager.Instance.noSwitch) { return; }
+        if (/*DeathScript.Instance.dead || */SwitchManager.Instance.noSwitch) { return; }
         float speed = rb.velocity.magnitude;
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
@@ -55,13 +53,5 @@ public class PlayerManager : MonoBehaviour {
             StartCoroutine(SwitchManager.Instance.Switch());
         }
         Debug.DrawRay(switchRay.position, transform.forward * 3);
-    }
-
-    public IEnumerator Death() {
-        dead = true;
-        yield return new WaitForSeconds(2);
-        this.transform.position = spawn;
-        dead = false;
-        yield return null;
     }
 }
