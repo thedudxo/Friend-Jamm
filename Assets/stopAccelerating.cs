@@ -26,7 +26,7 @@ public class stopAccelerating : MonoBehaviour {
             player1.gameObject.GetComponent<Rigidbody>().useGravity = false;
             player2.gameObject.GetComponent<Rigidbody>().useGravity = false;
         }
-        else { Analytics.CustomEvent("win"); }
+        else { Analytics.CustomEvent("win"); Debug.Log("oh wow you won"); }
        
 
         SwitchManager.Instance.noSwitch = true;
