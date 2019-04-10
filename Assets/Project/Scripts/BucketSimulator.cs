@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class BucketSimulator : MonoBehaviour {
 
@@ -19,5 +20,6 @@ public class BucketSimulator : MonoBehaviour {
     private void OnTriggerEnter(Collider other)
     {
         stupidReference.SetActive(true);
+        Analytics.CustomEvent("Bucket");
     }
 }

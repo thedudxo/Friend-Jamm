@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class stopAccelerating : MonoBehaviour {
 
@@ -25,7 +26,10 @@ public class stopAccelerating : MonoBehaviour {
             player1.gameObject.GetComponent<Rigidbody>().useGravity = false;
             player2.gameObject.GetComponent<Rigidbody>().useGravity = false;
         }
-        
+        else { Analytics.CustomEvent("win"); }
+       
+
         SwitchManager.Instance.noSwitch = true;
+        
     }
 }
