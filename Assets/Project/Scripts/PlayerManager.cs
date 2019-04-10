@@ -11,13 +11,23 @@ public class PlayerManager : MonoBehaviour {
     public Transform switchRay;
     private Rigidbody rb;
     private float accel = 200;
-    private float maxSpeed = 5;
+    private float maxSpeed = 3;
+    private static PlayerManager instance;
+    public static PlayerManager Instance {
+        get {
+            if (instance == null) {
+                instance = GameObject.FindObjectOfType<PlayerManager>();
+            }
+            return PlayerManager.instance;
+        }
+    }
 
     void Start() {
         rb = GetComponent<Rigidbody>();
     }
 
     void FixedUpdate() {
+        if (/*DeathScript.Instance.dead || */SwitchManager.Instance.noSwitch) { return; }
         float speed = rb.velocity.magnitude;
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
@@ -38,9 +48,9 @@ public class PlayerManager : MonoBehaviour {
             switchEffect.SetActive(true);
             SwitchManager.Instance.newTarget = otherPlayer.transform;
             SwitchManager.Instance.noSwitch = true;
-            StartCoroutine(SwitchManager.Instance.Switch());
             camScript.target = otherPlayer.transform;
             this.GetComponent<PlayerManager>().enabled = false;
+            StartCoroutine(SwitchManager.Instance.Switch());
         }
         Debug.DrawRay(switchRay.position, transform.forward * 3);
     }
