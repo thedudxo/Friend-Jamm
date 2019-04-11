@@ -55,6 +55,7 @@ public class ButtonScript : MonoBehaviour {
         //anaylitics
         string strang = "Button" + ButtonNumber;
         Analytics.CustomEvent(strang);
+        Debug.Log(strang);
     }
 
     private void OnTriggerExit(Collider other)
