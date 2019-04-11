@@ -24,10 +24,12 @@ public class PlayerManager : MonoBehaviour {
 
     void Start() {
         rb = GetComponent<Rigidbody>();
+        Debug.Log(SwitchManager.Instance.noSwitch); //this fixes a bug
     }
 
     void FixedUpdate() {
-        if (/*DeathScript.Instance.dead || */SwitchManager.Instance.noSwitch) { return; }
+        
+        //if (/*DeathScript.Instance.dead || */SwitchManager.Instance.noSwitch) { return; }
         float speed = rb.velocity.magnitude;
         float moveHorizontal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
