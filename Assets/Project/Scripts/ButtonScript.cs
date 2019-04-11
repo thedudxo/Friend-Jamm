@@ -1,8 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Analytics;
 
 public class ButtonScript : MonoBehaviour {
+
+    public int ButtonNumber;
 
     public bool isPressed = false;
     public List<GameObject> hydrolicPress;
@@ -48,6 +51,10 @@ public class ButtonScript : MonoBehaviour {
                 renderer.material = pressOn;
             }
         }
+
+        //anaylitics
+        string strang = "Button" + ButtonNumber;
+        Analytics.CustomEvent(strang);
     }
 
     private void OnTriggerExit(Collider other)
