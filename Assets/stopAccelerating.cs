@@ -7,7 +7,10 @@ public class stopAccelerating : MonoBehaviour {
 
     public PlayerManager player1;
     public PlayerManager player2;
+    public GameObject noLeave;
     public bool disableGRavity;
+
+    bool hasWon = false;
 
     // Use this for initialization
     void Start () {
@@ -26,9 +29,9 @@ public class stopAccelerating : MonoBehaviour {
             player1.gameObject.GetComponent<Rigidbody>().useGravity = false;
             player2.gameObject.GetComponent<Rigidbody>().useGravity = false;
         }
-        else { Analytics.CustomEvent("win"); Debug.Log("oh wow you won"); }
-       
+        else { if (!hasWon) { Analytics.CustomEvent("win"); Debug.Log("oh wow you won"); hasWon = true; } }
 
+        noLeave.SetActive(true);
         SwitchManager.Instance.noSwitch = true;
         
     }
