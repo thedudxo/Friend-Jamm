@@ -17,7 +17,7 @@ public class ButtonScript : MonoBehaviour {
         buttonAnim = GetComponent<Animator>();
     }
 
-    private void OnCollisionEnter(Collision collision) {
+    /*private void OnCollisionEnter(Collision collision) {
         buttonAnim.SetBool("isPressed", true);
         Renderer[] mats = button.GetComponentsInChildren<Renderer>();
         foreach (Renderer buttonMats in mats) {
@@ -30,9 +30,46 @@ public class ButtonScript : MonoBehaviour {
                 renderer.material = pressOn;
             }
         }
+    }*/
+
+    private void OnTriggerEnter(Collider other) {
+        buttonAnim.SetBool("isPressed", true);
+        Renderer[] mats = button.GetComponentsInChildren<Renderer>();
+        foreach (Renderer buttonMats in mats)
+        {
+            buttonMats.material = buttonOn;
+        }
+        foreach (GameObject press in hydrolicPress)
+        {
+            press.GetComponentInChildren<Animator>().SetBool("isPressed", true);
+            Renderer[] foo = press.GetComponentsInChildren<Renderer>();
+            foreach (Renderer renderer in foo)
+            {
+                renderer.material = pressOn;
+            }
+        }
     }
 
-    private void OnCollisionExit(Collision collision) {
+    private void OnTriggerExit(Collider other)
+    {
+        buttonAnim.SetBool("isPressed", false);
+        Renderer[] mats = button.GetComponentsInChildren<Renderer>();
+        foreach (Renderer buttonMats in mats)
+        {
+            buttonMats.material = buttonOff;
+        }
+        foreach (GameObject press in hydrolicPress)
+        {
+            press.GetComponentInChildren<Animator>().SetBool("isPressed", false);
+            Renderer[] foo = press.GetComponentsInChildren<Renderer>();
+            foreach (Renderer renderer in foo)
+            {
+                renderer.material = pressOff;
+            }
+        }
+    }
+
+    /*private void OnCollisionExit(Collision collision) {
         buttonAnim.SetBool("isPressed", false);
         Renderer[] mats = button.GetComponentsInChildren<Renderer>();
         foreach (Renderer buttonMats in mats) {
@@ -45,5 +82,5 @@ public class ButtonScript : MonoBehaviour {
                 renderer.material = pressOff;
             }
         }
-    }
+    }*/
 }
